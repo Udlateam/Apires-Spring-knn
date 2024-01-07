@@ -9,32 +9,32 @@ import com.udla.springboot.backend.apirest.services.IRolService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/roles")
+@RequestMapping("/api")
 public class RolController {
 
     @Autowired
     private IRolService rolService;
 
     // Obtener todos los roles
-    @GetMapping("/")
+    @GetMapping("/roles")
     public List<Rol> listarTodos() {
         return rolService.findAll();
     }
 
     // Obtener un rol por ID
-    @GetMapping("/{id}")
+    @GetMapping("/roles/{id}")
     public Rol obtenerRol(@PathVariable Long id) {
         return rolService.findById(id);
     }
 
     // Crear un nuevo rol
-    @PostMapping("/")
+    @PostMapping("/roles")
     public Rol crearRol(@RequestBody Rol rol) {
         return rolService.save(rol);
     }
 
     // Actualizar un rol
-    @PutMapping("/{id}")
+    @PutMapping("/roles/{id}")
     public Rol actualizarRol(@RequestBody Rol rol, @PathVariable Long id) {
         Rol rolActual = rolService.findById(id);
         if (rolActual != null) {
@@ -45,7 +45,7 @@ public class RolController {
     }
 
     // Eliminar un rol
-    @DeleteMapping("/{id}")
+    @DeleteMapping("roles/{id}")
     public void eliminarRol(@PathVariable Long id) {
         rolService.delete(id);
     }
