@@ -30,7 +30,7 @@ public class ClienteInteresRestController {
 
     // En tu controlador REST
 
-    @GetMapping("/intereses-usuarios")
+    @GetMapping("/cliente-intereses/intereses-usuarios")
     public List<InteresConUsuariosDTO> listarInteresesConUsuarios() {
         return clienteInteresService.obtenerInteresesConUsuarios();
     }
