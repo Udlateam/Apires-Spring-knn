@@ -8,6 +8,7 @@ import com.udla.springboot.backend.apirest.dto.ClienteDTO;
 
 
 public interface IClienteService {
+    List<ClienteDTO> findByNombreOrApellido(String query);
     List<ClienteDTO> findAll();
     ClienteDTO findById(Long id);
     ClienteDTO save(ClienteDTO clienteDTO);

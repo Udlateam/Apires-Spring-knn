@@ -64,6 +64,15 @@ public class ClienteServiceImpl implements IClienteService {
         clienteRepository.deleteById(id);
     }
 
+    @Override
+    @Transactional(readOnly = true)
+    public List<ClienteDTO> findByNombreOrApellido(String query) {
+        List<Cliente> clientes = clienteRepository.findByNombreContainingOrApellidoContaining(query, query);
+        return clientes.stream()
+                .map(this::convertirADTO)
+                .collect(Collectors.toList());
+    }
+
     private ClienteDTO convertirADTO(Cliente cliente) {
         return modelMapper.map(cliente, ClienteDTO.class);
     }

@@ -4,10 +4,14 @@
 
 package com.udla.springboot.backend.apirest.repositories;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.udla.springboot.backend.apirest.entity.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
-    // Aquí puedes agregar métodos personalizados si lo necesitas
+
+    // Método para buscar clientes por nombre o apellido
+    List<Cliente> findByNombreContainingOrApellidoContaining(String nombre, String apellido);
 }
