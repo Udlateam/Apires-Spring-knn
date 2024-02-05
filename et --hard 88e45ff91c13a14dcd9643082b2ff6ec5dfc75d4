@@ -1,0 +1,53 @@
+[33mcommit 17803730ae75519dbafa93d1777605e8c18962e1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Fri Feb 2 03:35:18 2024 -0500
+
+    Agregando nuevo usuario
+
+[33mcommit 88e45ff91c13a14dcd9643082b2ff6ec5dfc75d4[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Tue Jan 23 17:19:23 2024 -0500
+
+    todo funcionando knn
+
+[33mcommit 58c681b25d162038dad6190e8550d1045075d3d9[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Tue Jan 23 15:36:24 2024 -0500
+
+    Cambio para clientes por nombre y apellido
+
+[33mcommit f9245eb63156aaf9d3771f98c0aab0def0d00889[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Mon Jan 22 18:36:19 2024 -0500
+
+    Configurando UTF-8 en applicationproperties
+
+[33mcommit 5c1c6d3dedd792e03ac0b2eb134d248d70325858[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Mon Jan 22 18:11:31 2024 -0500
+
+    Configurando UTF-8 para tildes en inserts de la base de datos
+
+[33mcommit b9f3f70da3373aa719d887f75a97493e2b8a2304[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Sun Jan 7 16:32:09 2024 -0500
+
+    configurando correctamente el endpoint '/cliente-intereses/intereses-usuarios'
+
+[33mcommit e7f3c57d71a1b057abcc91b6dfbb542362b5b082[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Sun Jan 7 15:03:54 2024 -0500
+
+    Agregando la url de vercel que contiene el deploy del frontend
+
+[33mcommit 41ab8c53533bd8e1d0e19d3e341409b353f6b5b2[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Sun Jan 7 14:40:02 2024 -0500
+
+    Base de datos configurada en railway
+
+[33mcommit edab499dc160611954aa9cfe4df76d1cf8ecae89[m
+Author: Udlateam <tiorpecuadorbbb@gmail.com>
+Date:   Sat Jan 6 23:15:19 2024 -0500
+
+    Primer commit del proyecto Spring Boot
